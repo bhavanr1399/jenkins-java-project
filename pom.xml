@@ -39,13 +39,15 @@
 		</repository>
   	</distributionManagement>
 	
-	<pluginRepositories>
-	    <pluginRepository>    
-		<id>maven1</id>
-		<name>Maven.org</name>
-		<url>http://repo1.maven.org/maven2</url>
-	    </pluginRepository>
-	</pluginRepositories>
+	<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.8.1</version> <!-- or newer -->
+    <configuration>
+        <source>8</source>  <!-- or 11, 17, depending on your codebase and JDK -->
+        <target>8</target>
+    </configuration>
+</plugin>
 
 	
 </project>
