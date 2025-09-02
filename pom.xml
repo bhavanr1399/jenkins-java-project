@@ -38,7 +38,9 @@
 		    <url>http://13.233.230.166:8081/repository/maven-releases/</url>
 		</repository>
   	</distributionManagement>
-	
+
+	<build>
+        <plugins>
 	<plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-compiler-plugin</artifactId>
@@ -48,6 +50,8 @@
         <target>8</target>
     </configuration>
 </plugin>
+		  </plugins>
+</build>
 
 	
 </project>
